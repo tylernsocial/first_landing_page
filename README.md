@@ -1,2 +1,2 @@
 # first_landing_page
-hello
+gym inspired landing page
