@@ -13,10 +13,6 @@ body{
     margin: 0px;
     background-color: rgb(139, 179, 139);
     flex-wrap: wrap; /*makes responsive in a way (nice!)*/
-    /*
-    position: sticky;
-    top: 0.1px;
-    */
    
 }
 .header img{
@@ -53,21 +49,21 @@ ul.above{
     
     font-size: 54px;
     margin-bottom: 0px;
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid orange; /* The typwriter cursor */
-    white-space: wrap; /* Keeps the content on a single line */
+    overflow: hidden;
+    border-right: .15em solid orange;
+    white-space: wrap;
     animation: 
     typing 3.5s steps(35, end),
     blink-caret .75s step-end infinite;
 }
-/* The typing effect */
+
 @keyframes typing {
     from { width: 0 }
     to { width: 100% }
   }
   
-  /* The typewriter cursor effect */
-  @keyframes blink-caret {
+  
+@keyframes blink-caret {
     from, to { border-color: transparent }
     50% { border-color: rgb(243, 243, 243); }
   }
@@ -88,6 +84,11 @@ ul.above{
     font-size: 30px;
     border-radius: 8px;
     color: rgb(139, 179, 139);
+    transition: 0.3s;
+}
+.left button:hover{
+    background-color: white;
+
 }
 .display img{
    
@@ -248,9 +249,237 @@ ul.above{
     justify-content: center;
     background-color: rgb(139, 179, 139);
     flex-wrap: wrap; /*makes responsive in a way (nice!)*/
+    color: rgb(70, 62, 62);
+    flex-direction: row-reverse;
+}
+
+.head{
+    flex-direction: column;
+    flex-basis: 400px
+}
+
+.head h1{
+    font-size: 42px;
+    margin: 0;
+    margin-top: 40px;
+}
+.head p{
+    font-size: 20px;
+    margin: 0;
+}
+
+.team img{
+    width: 350px;
+    height: 350px;  
+    border: 1em double rgb(70, 62, 62);
+    margin-top: 40px;
+    margin-bottom: 60px;
+    border-radius: 10%;
+    margin-right: 100px;
+}
+/*team end*/
+/*team2 start*/
+.team2{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(139, 179, 139);
+    flex-wrap: wrap; /*makes responsive in a way (nice!)*/
+    color: rgb(70, 62, 62);
+    gap: 70px;
+}
+.team2 img{
+    width: 180px;
+    height: 250px;  
+    border: 1em double rgb(70, 62, 62);
+    box-shadow: none;
+    
+    
+}
+
+.overlay{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #bd4a3b;
+}
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+.mar{
+    position: relative;
+}
+.mar:hover{
+    box-shadow:
+    0 0 60px 30px #fff,  /* inner white */
+    0 0 100px 60px rgb(255, 0, 0); /* middle magenta */
+}
+.mar:hover .overlay {
+    opacity: 0.7;
+    background-color: #bd4a3b;
 }
 
 
-/*team end*/
+.jup{
+    position: relative;
+}
+.jup:hover .overlay {
+    opacity: 0.7;
+    background-color: #bd3bb6;
+}
+.jup:hover{
+    box-shadow:
+    0 0 60px 30px #fff,  /* inner white */
+    0 0 100px 60px rgb(223, 16, 241); /* middle magenta */
+}
+.sat{
+    position: relative;
+}
+.sat:hover .overlay {
+    opacity: 0.7;
+    background-color: #3b5ebd;
+}
+.sat:hover{
+    box-shadow:
+    0 0 60px 30px #fff,  /* inner white */
+    0 0 100px 60px rgb(14, 82, 228); /* middle magenta */
+}
+/*team2 end*/
+.filler{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(139, 179, 139);
+    flex-basis: 100px;
+    color: rgb(139, 179, 139);
+}
+/*gameplay start*/
+.gameplay{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(119, 146, 119);
+    flex-wrap: wrap; /*makes responsive in a way (nice!)*/
+    color: rgb(70, 62, 62);
+    
+}
+.gameplay h1{
+    font-size: 40px;
+}
+.ig{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(119, 146, 119);
+    flex-wrap: wrap; /*makes responsive in a way (nice!)*/
+    color: rgb(70, 62, 62); 
+    gap: 20px;
+}
+.ig img{
+    width: 350px;
+    height: 350px;  
+    border: 1em double rgb(70, 62, 62); 
+    margin-bottom: 60px;
+    border-radius: 10%;
+}
+/*gameplay end*/
+/*quote start*/
+.quote{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(70, 62, 62);
+    flex-wrap: wrap; /*makes responsive in a way (nice!)*/
+    color: rgb(119, 146, 119); 
+    
+}
+.quote p{
+font-size: 28px;
+text-align: center;
+padding: 20px;
+flex-basis: 700px;
+padding-right: 60px;
+}
+.quote h1{
+   
+    padding-top: 90px;
+}
 
+/*quote end*/
+/*bar start*/
+.email{
+    display: flex;
+    justify-content: center;
+    
+    flex-wrap: wrap; /*makes responsive in a way (nice!)*/
+    color: rgb(119, 146, 119); 
+    border: 3em solid rgb(255, 255, 255);
+    border-radius: 20%;
+   
+   
+}
+.info2{
+    background-color: rgb(70, 62, 62);
+    border-radius: 20px;
+    
+}
+.info2 h1{
+    font-size: 18px;
+    padding: 20px;
+    margin: 0px;
+    padding-bottom: 0;
+    padding-right: 25px;
+}    
+.info2 p{
+    padding: 20px;
+    margin: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
 
+.container{
+    background-color: rgb(70, 62, 62);
+    border-radius: 20px;
+    display: flex;
+    padding: 20px;
+}
+.container button{
+   display: block;
+    margin-top: 5px;
+    width: 200px;
+    border: none;
+    background:  rgb(139, 179, 139);
+    font-size: 30px;
+    border-radius: 8px;
+    color: rgb(70, 62, 62);
+    padding: 20px;
+    margin-left: 0px;
+    transition: 0.3s;
+}
+.container button:hover{
+    background-color: white;
+   
+}
+/*bar end*/
+/*footer start*/
+.foot{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /*makes responsive in a way (nice!)*/
+    color: rgb(255, 255, 255); 
+    background:  rgb(139, 179, 139);
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/*footer end*/

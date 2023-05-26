@@ -1,4 +1,6 @@
 images: links
 
 display: https://chipsprites.tumblr.com/tags
-starterss: https://le-pokerus.tumblr.com/
+starters: https://le-pokerus.tumblr.com/
+team, team2: https://spooksbot.tumblr.com/post/152736651024/pokemon-generations-team-galactic
+gameplay: https://ndsgifs.tumblr.com/ 
